@@ -1,0 +1,28 @@
+@keyframes circle-1-spin {
+  from {transform: rotateX(0deg) rotateY(25deg) rotateZ(20deg);}
+  to {transform: rotateX(360deg) rotateY(205deg) rotateZ(3600deg);}
+}
+
+@keyframes circle-2-spin {
+  from {transform: rotateY(0deg) rotateX(0deg);}
+  to {transform: rotateY(360deg) rotateX(0deg);}
+}
+
+@keyframes cube-spin {
+  0% {transform: rotateY(0deg) rotateZ(45deg) rotateX(45deg); }
+  90% { transform: rotateY(3600deg) rotateZ(4500deg) rotateX(45deg); }
+}
+
+@keyframes three-dimensions-circle {
+  0% { transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: rotateX(-60deg) rotateY(0deg) rotateZ(360deg); }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0);}
+  20% { transform: translate(-15px, 5px);}
+  40% { transform: translate(-15px, -5px);}
+  60% { transform: translate(15px, 5px);}
+  80% { transform: translate(20px, -5px);}
+  100% { transform: translate(0);}
+}

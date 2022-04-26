@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
+
+
+$font-1 : 'Dancing Script', cursive;
+$font-2 : 'Athiti', sans-serif;
+
+$cube-size: 50px;
+
+$purple: #6a21bd;
+$night-sky: #010108;
+$light-blue: #2DE4FC;
+$grey: rgba(255, 255, 255, 0.54);
+
+$text-shadow: 2px 1px 4px $light-blue;
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $night-sky;
+  font-family: $font-2;
+  color: #FFF;
+}
+
+.home, .portfolio {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

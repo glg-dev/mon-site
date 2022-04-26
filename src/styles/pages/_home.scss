@@ -1,0 +1,13 @@
+.home {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: $font-1;
+  font-size: 20px;
+  text-shadow: $text-shadow;
+  letter-spacing: .1em;
+}
