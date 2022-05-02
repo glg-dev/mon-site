@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 import { NavLink } from 'react-router-dom';
+import Button from './Button';
 
 const ContactForm = () => {
   const form = useRef();
@@ -11,7 +12,8 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs.sendForm('service_3lf9zxk', 'template_g8ub7o9', form.current, 'dvCG3x10c8juXiXa4')
+
+    // emailjs.sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, form.current, process.env.REACT_APP_PUBLICKEY)
     //   .then((result) => {
     //     console.log(result.text);
     //   }, (error) => {
@@ -44,7 +46,7 @@ const ContactForm = () => {
               <textarea name="message" placeholder='Votre message ici' onChange={(e) => setMessage(e.target.value)} required></textarea>
             </div>
             {message.length < 1 && <span id='error-message' className='error-input'>Veuillez écrire un message</span>}
-            <button type="submit" >{success ? "Message envoyé !": "Envoyer"}</button>
+            <Button props={success && 'success'} />
           </form>
         </div>
       ) : (

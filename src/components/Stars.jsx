@@ -27,7 +27,7 @@ const Stars = () => {
     const timeout = setTimeout(() => {
       setStars((oldStars) => oldStars.filter(oldstar => oldstar !== star))
     }, 16000)
-    return timeout
+    return () => clearTimeout(timeout)
   }
     
     useEffect(() => {

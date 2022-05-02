@@ -1,0 +1,28 @@
+.glitch {
+  cursor: default;
+  position: relative;
+  top: 0;
+  left: 0;
+  &::before, &::after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+  } &::after {
+    z-index: -2;
+  } &::before {
+    z-index: -1;
+  }
+  &:hover {
+    &::before {
+      animation: glitch .24s cubic-bezier(.25, .46, .45, .94) .16s 1  both;
+    }
+    &::after {
+      animation: glitch .24s cubic-bezier(.25, .46, .45, .94) .16s reverse both 1;
+    }
+  }
+}

@@ -2,8 +2,6 @@
   position: absolute;
   width: 100vw;
   z-index: 1;
-  font-family: $font-2;
-  letter-spacing: .05rem;
   .navbar {
     display: flex;
     justify-content: space-around;
@@ -11,16 +9,9 @@
     a {
       padding: 20px 0;
       width: 50%;
-      text-align: center;
       &:hover {
         @include glass;
-        text-shadow: 12px 4px 5px rgba(255, 255, 255, 0.66);
       }
-    }
-    .navActive {
-      text-decoration: underline;
-      text-shadow: $text-shadow;
-      font-size: 1.1rem;
     }
   }
 }
