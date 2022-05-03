@@ -1,34 +1,32 @@
-.rotating-glass {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  ul {
-    // font-size: 4vw;
-    transform-style: preserve-3d;
-    animation: three-dimensions-circle 30s infinite linear reverse;
-  }
-  li {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(100, 237, 255, 0.4);
-    box-shadow: 0 0 10px 1px #FFF, 0 0 24px 8px $light-blue;
-    // backdrop-filter: blur(5px);
-    border: 1px solid rgba(100, 237, 255, 0.3);
-  }
-  @for $i from 1 to 13 {
-    li:nth-child(#{$i}) {
-      transform: translate(-50%, -50%) rotateZ(#{$i * 30 - 30}deg) translateY(-260px) rotateX(90deg) rotateY(180deg);
-    }
-  }
-}
+// .rotating-glass {
+//   position: absolute;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   .projects {
+//     transform-style: preserve-3d;
+//     animation: three-dimensions-circle 30s infinite linear reverse;
+//   }
+//   .PortfolioProject {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     width: 100px;
+//     height: 100px;
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: rgba(100, 237, 255, 0.4);
+//     box-shadow: 0 0 10px 1px #FFF, 0 0 24px 8px $light-blue;
+//     border: 1px solid rgba(100, 237, 255, 0.3);
+//   }
+//   @for $i from 1 to 8 {
+//     .PortfolioProject:nth-child(#{$i}) {
+//       transform: translate(-50%, -50%) rotateZ(#{$i * 30 - 30}deg) translateY(-260px) rotateX(90deg) rotateY(180deg);
+//     }
+//   }
+// }

@@ -9,11 +9,16 @@ $font-2 : 'Athiti', sans-serif;
 body {
   font-family: $font-2;
   color: #FFF;
+  text-align: justify;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h2, h3 {
+  text-shadow: $text-shadow;
 }
 
 //Cube

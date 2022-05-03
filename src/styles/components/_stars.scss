@@ -3,6 +3,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  z-index: -10;
   span {
     animation: fadeOut 15s forwards;
     animation-delay: 1600ms;
