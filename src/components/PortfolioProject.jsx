@@ -24,34 +24,39 @@ const PortfolioProject = ({project}) => {
           <div className="project-infos">
             <div className="head">
               <h2 className='glitch' data-glitch={name}>{name}</h2>
-              <div className="source-code">
-                {source && (
-                  <a href={source} target="_blank" rel="noopener noreferrer">Accéder au site</a>
-                )}
-                {repo && (
-                  <a href={repo} target="_blank" rel="noopener noreferrer">Accéder au code</a>
-                )}
+              <div className="head-content">
+                <img src={picture} alt={name} />
+                <div className="source-code">
+                  {source && (
+                    <a href={source} target="_blank" rel="noopener noreferrer">Accéder au site</a>
+                  )}
+                  {repo && (
+                    <a href={repo} target="_blank" rel="noopener noreferrer">Accéder au code</a>
+                  )}
+                </div>
               </div>
             </div>
             {description && (
               <p className="text">{description}</p>
             )}
-            {languages && (
-              <ul className="languages">
-                <h3>Langages utilisés :</h3>
-              {languages.map((language) =>
-                <li key={language}>{language}</li>
+            <div className="specs">
+              {languages && (
+                <ul className="languages">
+                  <h3>Langages utilisés :</h3>
+                {languages.map((language) =>
+                  <li key={language}>{language}</li>
+                )}
+                </ul>
               )}
-              </ul>
-            )}
-            {skills && (
-              <ul className="skills">
-                <h3>Compétences acquises :</h3>
-              {skills.map((skill) =>
-                <li key={skill}>{skill}</li>
+              {skills && (
+                <ul className="skills">
+                  <h3>Compétences acquises :</h3>
+                {skills.map((skill) =>
+                  <li key={skill}>{skill}</li>
+                )}
+                </ul>
               )}
-              </ul>
-            )}
+            </div>
             <button onClick={() => setShowInfos(false)}>Retourner sur la page</button>
           </div>
         </div>

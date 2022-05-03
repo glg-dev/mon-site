@@ -3,6 +3,7 @@
   .project-header {
     display: flex;
     justify-content: space-around;
+    text-shadow: $text-shadow;
   }
   .project-name {
     cursor: pointer;
@@ -42,17 +43,31 @@
     box-shadow: $box-shadow;
     animation: popup .4s ease forwards;
     transform-origin: center;
+    z-index: 2;
     h2 {
       margin-top: 0;
     }
   }
+  .head-content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    img {
+      width: 600px;
+    }
+  }
   .source-code {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     gap: 2rem;
     text-decoration: underline;
     a:hover {
       text-shadow: $text-shadow;
     }
+  }
+  .specs {
+    display: flex;
+    justify-content: space-around;
   }
 }
