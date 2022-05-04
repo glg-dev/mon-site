@@ -1,73 +1,76 @@
 .PortfolioProject {
-  width: 10rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin: 0;
   .project-header {
-    display: flex;
-    justify-content: space-around;
-    text-shadow: $text-shadow;
-  }
-  .project-name {
-    cursor: pointer;
-  }
-  .thumbnail {
-    cursor: pointer;
-    width: 100%;
-    height: 10rem;
-    border-radius: 100%;
-    object-fit: cover;
-    border: 1px solid $light-blue;
-    box-shadow: $box-shadow;
-  }
-  i {
-    height: 16px;
-    width: 16px;
-  }
-  .infos-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  .project-infos {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 75vw;
-    background: $night-sky;
-    border: 1px solid $light-blue;
-    border-radius: 40px;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    padding: 2rem;
-    box-shadow: $box-shadow;
-    animation: popup .4s ease forwards;
-    transform-origin: center;
-    z-index: 2;
-    h2 {
-      margin-top: 0;
-    }
-  }
-  .head-content {
-    display: flex;
-    justify-content: flex-start;
-    gap: 2rem;
-    img {
-      width: 600px;
-    }
-  }
-  .source-code {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 2rem;
-    text-decoration: underline;
-    a:hover {
-      text-shadow: $text-shadow;
+    text-shadow: $text-shadow;
+    .title {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      h2 {
+        margin-top: 0;
+      }
+    }
+    .thumbnail {
+      cursor: pointer;
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid $light-blue;
+      box-shadow: $box-shadow;
+    }
+    .icons {
+      display: flex;
+      justify-content: space-around;
+      gap: .5rem;
+    }
+    i {
+      height: 16px;
+      width: 16px;
     }
   }
-  .specs {
+  .project-infos {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: .5rem 2rem;
+    white-space: normal;
+    .source-code {
+      display: flex;
+      justify-content: space-around;
+      gap: 2rem;
+      text-decoration: underline;
+      a:hover {
+        text-shadow: $text-shadow;
+      }
+    }
+    .specs {
+      display: flex;
+      justify-content: space-around;
+      flex: 1;
+      h3 {
+        text-align: center;
+      }
+      .languages, .skills {
+        flex: 1;
+      }
+      .skills-list, .languages-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
   }
 }

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ocprojects } from '../data/ocProjects';
-import leftArrow from '../assets/arrow_left.svg'
 import PortfolioProject from './PortfolioProject';
 
 const Carousel = () => {
@@ -16,7 +15,7 @@ const Carousel = () => {
   }
 
   return (
-    <div>
+    <div className='carousel'>
       {
         ocprojects.map((project, index) => index === current && (
           <div className="slide" key={index}>
@@ -25,10 +24,11 @@ const Carousel = () => {
           </div>
         ))
       }
-      <div className="buttons">
-        <div onClick={handlePrev}>
-          <img src={leftArrow} alt="left arrow" />
-        </div>
+      <div className='prev-button' onClick={handlePrev}>
+        <i className='fas fa-4x fa-caret-left'/>
+      </div>
+      <div className='next-button' onClick={handleNext}>
+      <i className='fas fa-4x fa-caret-right'/>
       </div>
     </div>
   );

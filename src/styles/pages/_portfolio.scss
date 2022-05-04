@@ -1,6 +1,6 @@
 .portfolio {
-  // position: relative;
-  width: 100vw;
+  position: relative;
+  width: 90vw;
   height: 95vh;
   padding: 84px 42px;
   // display: flex;
@@ -13,10 +13,10 @@
   //   left: 50%;
   //   transform: translate(-50%, -50%);
   // }
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);  
-    grid-gap: 2rem;
-    margin-top: 2rem;
-  }
+  // .projects {
+  //   display: grid;
+  //   grid-template-columns: repeat(4, 1fr);  
+  //   grid-gap: 2rem;
+  //   margin-top: 2rem;
+  // }
 }
