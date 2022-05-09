@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const PortfolioProject = ({project}) => {
 
@@ -17,7 +17,7 @@ const PortfolioProject = ({project}) => {
             </div>
           )}
         </div>
-        <img className='thumbnail' src={picture} alt={name} />
+        {picture && <img className='thumbnail' src={picture} alt={name} />}
       </div>
       <div className="project-infos">
         <div className="source-code">

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { ocprojects } from '../data/ocProjects';
 import PortfolioProject from './PortfolioProject';
 
-const Carousel = () => {
+const Carousel = ({projectType}) => {
   const [current, setCurrent] = useState(0);
-  const length = ocprojects.length;
+  const length = projectType.length;
 
   const handleNext = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -17,19 +17,25 @@ const Carousel = () => {
   return (
     <div className='carousel'>
       {
-        ocprojects.map((project, index) => index === current && (
+        projectType.map((project, index) => index === current && (
           <div className="slide" key={index}>
             <PortfolioProject project={project} />
             <span>{current + 1} / {length}</span>
           </div>
         ))
       }
-      <div className='prev-button' onClick={handlePrev}>
-        <i className='fas fa-4x fa-caret-left'/>
-      </div>
-      <div className='next-button' onClick={handleNext}>
-      <i className='fas fa-4x fa-caret-right'/>
-      </div>
+      {
+        length > 1 && (
+          <div className="controls">
+            <div className='prev-button' onClick={handlePrev}>
+              <i className='fas fa-4x fa-caret-left'/>
+            </div>
+            <div className='next-button' onClick={handleNext}>
+              <i className='fas fa-4x fa-caret-right'/>
+            </div>
+          </div>
+        )
+      }
     </div>
   );
 };
