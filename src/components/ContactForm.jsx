@@ -13,12 +13,12 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, form.current, process.env.REACT_APP_PUBLICKEY)
-    //   .then((result) => {
-    //     console.log(result.text);
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
+    emailjs.sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, form.current, process.env.REACT_APP_PUBLICKEY)
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
     setSuccess(true);
     e.target.reset();
   }
