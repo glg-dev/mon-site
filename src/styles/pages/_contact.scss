@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 
 .contact-form {
@@ -10,8 +11,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 2rem;
+  gap: 1em;
+  padding: 1.5em;
   @include glass;
   h1 {
     margin-top: 0;
@@ -22,23 +23,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    gap : 1.5rem;
+    gap : 1.5em;
     span {
       text-align: center;
-      margin-top: -1.4rem;
+      margin-top: -1.4em;
     }
     .name, .email, .message {
       display: flex;
       justify-content: space-between;
-      gap: .6rem;
+      gap: .6em;
     }
     label {
-      padding: 0.5rem;
+      padding-top: 0.5em;
     }
     textarea, input {
       width: 360px;
-      padding: 0.5rem;
-      border-radius: .5rem;
+      padding: 0.5em;
+      border-radius: .5em;
       border: 1px solid $grey;
       background: rgba(255, 255, 255, 0.08);
       &:focus {

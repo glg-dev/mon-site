@@ -27,7 +27,7 @@ h2, h3 {
 }
 
 .navigation {
-  letter-spacing: .05rem;
+  letter-spacing: .05em;
   a {
     text-align: center;
     &:hover {
@@ -37,14 +37,14 @@ h2, h3 {
   .navActive {
     text-decoration: underline;
     text-shadow: $text-shadow;
-    font-size: 1.1rem;
+    font-size: 1.1em;
   }
 }
 
 .home {
   font-family: $font-1;
   font-size: 20px;
-  letter-spacing: .1em;
+  letter-spacing: .1rem;
 }
 
 .glitch {
@@ -65,7 +65,7 @@ h2, h3 {
   }
   .form {
     span {
-      font-size: .9rem;
+      font-size: .9em;
     }
     .name, .email, .message {
       &:focus-within {
@@ -84,20 +84,22 @@ h2, h3 {
       }
     }
     textarea {
-      font-size: 1rem;
+      font-size: 1em;
     }
   }
   a:hover {
     color: $light-blue;
     text-decoration: underline;
   }
-
+  @media screen and (max-height: 720px) {
+    font-size: 12px;
+  }
 }
 
 .error {
   text-transform: uppercase;
-  font-size: 4.2rem;
-  letter-spacing: .1rem;
+  font-size: 4.2em;
+  letter-spacing: .1em;
 }
 
 .footer {

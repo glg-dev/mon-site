@@ -32,8 +32,8 @@ const ContactForm = () => {
           <h1 className='glitch' data-glitch='Contactez-moi'>Contactez-moi</h1>
           <form onSubmit={sendEmail} className='form' ref={form}>
             <div className="name">
-            <label htmlFor="name">Votre nom : </label>
-            <input type="text" name="name" tabIndex='1' onChange={(e) => setName(e.target.value)} required />
+              <label htmlFor="name">Votre nom : </label>
+              <input type="text" name="name" tabIndex='1' onChange={(e) => setName(e.target.value)} required />
             </div>
             {name.length < 1 && <span id='error-name' className='error-input'>Veuillez renseigner votre nom</span>}
             <div className="email">
