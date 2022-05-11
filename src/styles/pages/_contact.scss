@@ -32,6 +32,12 @@
       display: flex;
       justify-content: space-between;
       gap: .6em;
+      @media screen and (max-width: 589px) {
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+      }
     }
     label {
       padding-top: 0.5em;
@@ -45,6 +51,9 @@
       &:focus {
         border: 1px solid $light-blue;
         outline: none;
+      }
+      @media screen and (max-width: 465px) {
+        width: 240px;
       }
     }
     textarea {
