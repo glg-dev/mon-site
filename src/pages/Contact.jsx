@@ -14,7 +14,7 @@ const Contact = () => {
           onMouseEnter={() => setPopup(true)} 
           onMouseLeave={() => setPopup(false)}
           >
-          <a href="https://wa.me/0635167962" target='_blank' rel='noopener noreferrer'>
+          <a href="https://wa.me/+33635167962" target='_blank' rel='noopener noreferrer'>
           <i className="fa fa-2x fa-whatsapp whatsapp-icon"></i>
           </a>
         </button>
