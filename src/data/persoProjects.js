@@ -20,5 +20,16 @@ export const persoProjects = [
     description: `Création d'un kit de batterie. Il suffit d'appuyer sur les touches correspondantes pour jouer le son voulu, ou de cliquer sur le son.`,
     skills: ['Audio', 'JavaScript'],
     picture: "./assets/img/DrumKit.png",
+  },
+  {
+    id: 3,
+    name: 'CSS Variables',
+    languages: ['CSS', 'JavaScript',],
+    languagesIcons: ['fab fa-css3-alt', 'fab fa-js'],
+    source: "https://glg-dev.github.io/CSS-Variables/",
+    repo: 'https://github.com/glg-dev/CSS-Variables',
+    description: `Possibilité de changer les règles CSS d'une image ( taille et couleur de la bordure, flou, rotation, taille) au clic, grâce à JavaScript.`,
+    skills: ['setProperty', 'addEventListener'],
+    picture: "./assets/img/CSSVariables.png",
   }
 ]

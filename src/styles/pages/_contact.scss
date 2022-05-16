@@ -67,3 +67,29 @@
     align-items: center;
   }
 }
+.whatsapp-cta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10rem;
+  .whatsapp {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+    a {
+      z-index: 10;
+    }
+  }
+  .popup {
+    position: absolute;
+    top: -.5rem;
+    left: 1rem;
+    padding: .2rem;
+    font-size: .7rem;
+    @include glass;
+    p {
+      margin: 0;
+    }
+  }
+}
