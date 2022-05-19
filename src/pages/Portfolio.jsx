@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PortfolioProject from '../components/PortfolioProject';
 import Skills from '../components/Skills';
 // import PortfolioProject from '../components/PortfolioProject';
@@ -8,35 +8,101 @@ import { persoProjects } from '../data/persoProjects';
 import { work } from '../data/work';
 
 const Portfolio = () => {
+
+  const [filtersArray, setFiltersArray] = useState([]);
+  const [selectedFilter, setSelectedFilter] = useState('');
+
+  useEffect(() => {
+    ocprojects.map((project) => {
+      project.filters.map((filters) => {
+        if (!filtersArray.includes(filters)) {
+          setFiltersArray([...filtersArray, filters]);
+        }
+        return filtersArray
+      })
+    })
+    persoProjects.map((project) => {
+      project.filters.map((filters) => {
+        if (!filtersArray.includes(filters)) {
+          setFiltersArray([...filtersArray, filters]);
+        }
+        return filtersArray
+      })
+    })
+    work.map((project) => {
+      project.filters.map((filters) => {
+        if (!filtersArray.includes(filters)) {
+          setFiltersArray([...filtersArray, filters]);
+        }
+        return filtersArray
+      })
+    })
+    return filtersArray
+  }, [filtersArray, selectedFilter])
+  
+
   return (
     <div className='portfolio'>
       <TypedText string={[`Voici mon portfolio.<br />^1600 Vous retrouverez ici mes créations.`]} />
 
-      <h1 className='glitch' data-glitch='Mes travaux'>Mes travaux</h1>
-      <div className="projects">
+      <h2 className='glitch' data-glitch='Filtrer par item'>Filtrer par item</h2>
+      <div className="filters">
         {
-          ocprojects.map((project, index) => (
-            <PortfolioProject project={project} key={index} />
+          filtersArray.map((filter) => (
+            <button
+              key={filter} 
+              className={(filter === selectedFilter ? "checked" : "")}
+            >
+              <input 
+                type="radio" 
+                name="radio" 
+                id={filter} 
+                value={filter} 
+                onChange={(e) => setSelectedFilter(e.target.value)} 
+              />
+              <label htmlFor={filter}>{filter}</label>
+            </button>
           ))
         }
-        {
-          work.map((project, index) => (
-            <PortfolioProject project={project} key={index} />
-          ))
-        }
+        <button className={(selectedFilter === '' ? "checked" : "")}>
+          <input 
+            type="radio" 
+            name="radio" 
+            id="all" 
+            value="all" 
+            checked={selectedFilter === ''}
+            onChange={() => setSelectedFilter('')} 
+          />
+          <label htmlFor="all">Tous</label>
+        </button>
       </div>
 
-      <h1 className='glitch' data-glitch='Projets personnels'>Projets personnels</h1>
+      {/* <h1 className='glitch' data-glitch='Mes travaux'>Mes travaux</h1> */}
       <div className="projects">
-      {
-          persoProjects.map((project, index) => (
-            <PortfolioProject project={project} key={index} />
-          ))
+        {
+          ocprojects
+            .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
+            .map((project, index) => (
+              <PortfolioProject project={project} key={index} />
+            ))
+        }
+        {
+          work
+            .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
+            .map((project, index) => (
+              <PortfolioProject project={project} key={index} />
+            ))
+        }
+        {
+          persoProjects
+            .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
+            .map((project, index) => (
+              <PortfolioProject project={project} key={index} />
+            ))
         }
       </div>
-
-      <h1 className='glitch' data-glitch='Mes compétences'>Mes compétences</h1>
-      <Skills />
+      {/* <h1 className='glitch' data-glitch='Mes compétences'>Mes compétences</h1>
+      <Skills /> */}
     </div>
   );
 };

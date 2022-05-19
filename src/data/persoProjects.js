@@ -2,6 +2,7 @@ export const persoProjects = [
   {
     id: 1,
     name: 'React Clocks',
+    type: 'Perso',
     languages: ['React', 'Sass'],
     languagesIcons: ['fab fa-react','fab fa-sass'],
     source: "https://react-clocks.vercel.app/",
@@ -9,10 +10,12 @@ export const persoProjects = [
     description: `Horloge sur laquelle on peut cliquer pour qu'elle affiche l'heure au format numérique. Possibilité de changer le thème couleur de la page.`,
     skills: ['React', 'Redux'],
     picture: "./assets/img/ReactClocks.png",
+    filters: ['Sass', 'JavaScript', 'React', 'Redux']
   },
   {
     id: 2,
     name: 'Drum Kit',
+    type: 'Perso',
     languages: ['CSS', 'JavaScript',],
     languagesIcons: ['fab fa-css3-alt', 'fab fa-js'],
     source: "https://glg-dev.github.io/JavaScript-Drum-Kit/",
@@ -20,10 +23,12 @@ export const persoProjects = [
     description: `Création d'un kit de batterie. Il suffit d'appuyer sur les touches correspondantes pour jouer le son voulu, ou de cliquer sur le son.`,
     skills: ['Audio', 'JavaScript'],
     picture: "./assets/img/DrumKit.png",
+    filters: ['JavaScript', 'GitHub Pages', 'MP3']
   },
   {
     id: 3,
     name: 'CSS Variables',
+    type: 'Perso',
     languages: ['CSS', 'JavaScript',],
     languagesIcons: ['fab fa-css3-alt', 'fab fa-js'],
     source: "https://glg-dev.github.io/CSS-Variables/",
@@ -31,5 +36,6 @@ export const persoProjects = [
     description: `Possibilité de changer les règles CSS d'une image ( taille et couleur de la bordure, flou, rotation, taille) au clic, grâce à JavaScript.`,
     skills: ['setProperty', 'addEventListener'],
     picture: "./assets/img/CSSVariables.png",
+    filters: ['JavaScript', 'GitHub Pages']
   }
 ]

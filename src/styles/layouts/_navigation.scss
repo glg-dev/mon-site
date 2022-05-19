@@ -1,6 +1,7 @@
 .navigation {
   position: absolute;
   width: 100vw;
+  height: $nav-height;
   z-index: 1;
   .navbar {
     display: flex;

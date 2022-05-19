@@ -1,14 +1,30 @@
 .portfolio {
   position: relative;
   width: 90vw;
-  height: 95vh;
-  padding: 84px 42px;
+  height: calc(100vh - $nav-height);
+  padding: 84px 42px 0 42px;
+  h2 {
+    margin-top: 4rem;
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  input {
+    display: none;
+  }
+  label {
+    cursor: pointer;
+  }
   h1 {
     margin-top: 3.5rem;
   }
   .projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;  
+    gap: 1rem;
+    padding: 4rem 0;
   }
 }
