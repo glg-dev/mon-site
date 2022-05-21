@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Glitch from '../components/Glitch';
 import PortfolioProject from '../components/PortfolioProject';
 import Skills from '../components/Skills';
-// import PortfolioProject from '../components/PortfolioProject';
 import TypedText from '../components/TypedText';
 import { ocprojects } from '../data/ocProjects';
 import { persoProjects } from '../data/persoProjects';
@@ -45,13 +45,15 @@ const Portfolio = () => {
     <div className='portfolio'>
       <TypedText string={[`Voici mon portfolio.<br />^1600 Vous retrouverez ici mes créations.`]} />
 
-      <h2 className='glitch' data-glitch='Filtrer par item'>Filtrer par item</h2>
+      <h2>
+        <Glitch text='Filtrer par item' />
+      </h2>
       <div className="filters">
         {
           filtersArray.map((filter) => (
             <button
               key={filter} 
-              className={(filter === selectedFilter ? "checked" : "")}
+              className={(filter === selectedFilter ? "checked" : undefined)}
             >
               <input 
                 type="radio" 

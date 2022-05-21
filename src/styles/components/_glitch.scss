@@ -19,7 +19,7 @@
   }
   &:hover {
     &::before {
-      animation: glitch .24s cubic-bezier(.25, .46, .45, .94) .16s 1  both;
+      animation: glitch .24s cubic-bezier(.25, .46, .45, .94) .16s 1 both;
     }
     &::after {
       animation: glitch .24s cubic-bezier(.25, .46, .45, .94) .16s reverse both 1;

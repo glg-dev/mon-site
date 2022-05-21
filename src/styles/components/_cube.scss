@@ -15,7 +15,7 @@
   width: calc(#{$cube-size} * 2);
   height: calc(#{$cube-size} * 2);
   border: 1px solid $purple;
-  box-shadow: 0 0 10px 0 #FFF, 0 0 24px 4px $purple;
+  box-shadow: 0 0 5px 0 #FFF, 0 0 12px 2px $purple;
   border-radius: 50%;
 }
 
@@ -42,7 +42,7 @@
   width: $cube-size;
   height: $cube-size;
   border: 1px solid $purple;
-  box-shadow: 0 0 10px 0 #FFF, 0 0 24px 4px $purple;
+  box-shadow: 0 0 5px 0 #FFF, 0 0 12px 2px $purple;
 }
 
 #front {

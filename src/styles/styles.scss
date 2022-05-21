@@ -1,15 +1,14 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/keyframes';
-@import './utils/glitch';
 @import './base/typography';
 @import './base/typedText';
 @import './settings.scss';
 
 @import './components/button';
 @import './components/cube';
+@import './components/glitch';
 @import './components/portfolioproject';
-@import './components/rotating-glass';
 @import './components/skills';
 @import './components/stars';
 @import './layouts/footer';

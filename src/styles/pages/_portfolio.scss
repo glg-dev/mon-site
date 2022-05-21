@@ -1,7 +1,5 @@
 .portfolio {
   position: relative;
-  width: 90vw;
-  height: calc(100vh - $nav-height);
   padding: 84px 42px 0 42px;
   h2 {
     margin-top: 4rem;
@@ -23,6 +21,7 @@
   }
   .projects {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 4rem 0;

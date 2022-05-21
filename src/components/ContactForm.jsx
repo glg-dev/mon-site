@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 import { NavLink } from 'react-router-dom';
 import Button from './Button';
+import Glitch from './Glitch';
 
 const ContactForm = () => {
   const form = useRef();
@@ -29,7 +30,9 @@ const ContactForm = () => {
     {
       !success ? (
         <div>
-          <h1 className='glitch' data-glitch='Contactez-moi'>Contactez-moi</h1>
+          <h1>
+            <Glitch text='Contactez-moi' />
+          </h1>
           <form onSubmit={sendEmail} className='form' ref={form}>
             <div className="name">
               <label htmlFor="name">Votre nom : </label>
