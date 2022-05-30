@@ -7,10 +7,10 @@ export const ocprojects = [
     languagesIcons: ['fab fa-css3-alt'],
     source: 'https://glg-dev.github.io/Booki/',
     repo: 'https://github.com/glg-dev/Booki',
-    description: `Intégration d'une maquette pour la société Booki, permettant à l'utilisateur de trouver des hébergements et activités dans la ville de son choix, avec des filtres pour les hébergements.`,
+    description: `Intéger une maquette pour la société Booki, permettant à l'utilisateur de trouver des hébergements et activités dans la ville de son choix, avec des filtres pour les hébergements. L'interface est responsive.`,
     skills: ['Flexbox', 'responsive', 'GitHub', 'GitHub Pages', 'FontAwesome'],
     picture: './assets/img/Booki.png',
-    filters : ['Figma']
+    filters : ['Figma', 'GitHub Pages']
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const ocprojects = [
     languagesIcons: ['fab fa-css3-alt','fab fa-sass'],
     source: 'https://glg-dev.github.io/OhMyFood/',
     repo: 'https://github.com/glg-dev/OhMyFood',
-    description: `Développer un site destiné aux mobiles, qui répertorie les menus de restaurants gastronomiques. L'objectif était, via Sass, d'inclure des animations sur le site, et tester nos capacités à créer un responsive desktop à partir d'une maquette créée pour mobiles.`,
+    description: `Implémenter la version mobile d'un site de foodtech avec des animations CSS en assurant la cohérence graphique du site. Utilisation de Git pour le versioning.`,
     skills: ['Sass', 'Grid', 'loader', 'keyframes'],
     picture: './assets/img/OhMyFood.png',
     filters : ['Sass', 'Figma', 'GitHub Pages']
@@ -33,7 +33,7 @@ export const ocprojects = [
     languagesIcons: ['fab fa-css3-alt','fab fa-js'],
     source: 'https://glg-dev.github.io/GameOn/',
     repo: 'https://github.com/glg-dev/GameOn/',
-    description: `Reprendre un projet en cours d'élaboration, pour intégrer un formulaire fonctionnel et une fenêtre modale en JavaScript.`,
+    description: `Intégrer un formulaire fonctionnel et une fenêtre modale en JavaScript sur le site de GameOn, une entreprise de gaming`,
     skills: ['JavaScript', 'events', 'RegExp', 'form validation'],
     picture: './assets/img/GameOn.png',
     filters : ['JavaScript', 'Figma', 'GitHub Pages']
@@ -46,10 +46,10 @@ export const ocprojects = [
     languagesIcons: ['fab fa-css3-alt','fab fa-js'],
     source: 'https://glg-dev.github.io/FishEye/',
     repo: 'https://github.com/glg-dev/GameOn/',
-    description: `Créer une plateforme destinée aux photographes freelance. Formulaire, carousel, fonctionnalités de tri, "likes", et accessibilité répondant aux recommandations WCAG.`,
+    description: `Créer une plateforme destinée aux photographes freelance. Formulaire, carousel, fonctionnalités de tri, "likes", et accessibilité répondant aux recommandations WCAG, le tout maintenable.`,
     skills: ['Accessibilité', 'Tris d\'image', 'Factory Pattern', 'Fetch', 'npm'],
     picture: './assets/img/FishEye.png',
-    filters : ['JavaScript', 'Figma', 'GitHub Pages', 'WCAG']
+    filters : ['JavaScript', 'Figma', 'GitHub Pages', 'WCAG', 'JSDoc']
   },
   {
     id: 5,
@@ -71,10 +71,10 @@ export const ocprojects = [
     languages: ['JavaScript'],
     languagesIcons: ['fab fa-js'],
     repo: 'https://github.com/glg-dev/Billed/',
-    description: `Reprendre un SaaS RH permettant la gestion de note de frais, avec un côté "employé" et un "administrateur". Débug, tests unitaires et d'intégration et avec Jest, plan de tests end to end.`,
+    description: `Débugger l'application de gestion de note de frais Billed, et implémenter des tests unitaires et d'intégration.`,
     skills: ['Jest', 'Routing', 'Tests',],
     picture: './assets/img/Billed.png',
-    filters : ['JavaScript', 'Figma', 'Tests', 'Notion.so']
+    filters : ['JavaScript', 'Figma', 'Tests', 'Notion.so', 'API']
   },
   // {
   //   id: 7,
@@ -92,7 +92,7 @@ export const ocprojects = [
     languages: ['React', 'Sass'],
     languagesIcons: ['fab fa-react','fab fa-sass'],
     repo: 'https://github.com/glg-dev/Kasa',
-    description: `Recruté par une plateforme web spécialisée dans la location d'appartements entre particuliers, créer la page d'accueil et les pages pour chaque appartement.`,
+    description: `Implémenter le front-end de Kasa, une application de location de logements, avec React et React-Router.`,
     skills: ['React', 'React Router'],
     picture: './assets/img/Kasa.png',
     filters : ['Sass', 'Figma', 'React']
@@ -104,9 +104,21 @@ export const ocprojects = [
     languages: ['React', 'Sass'],
     languagesIcons: ['fab fa-react','fab fa-sass'],
     repo: 'https://github.com/glg-dev/SportSee',
-    description: `Développer un tableau de bord d'analytics à l'aide d'une librairie externe, pour une startup dédiée au coaching sportif.`,
+    description: `Développer un tableau de bord d'analytics avec graphiques et diagrammes à l'aide d'une librairie externe, pour une startup dédiée au coaching sportif, et générer la documentation technique de l'application.`,
     skills: ['Recharts', 'Axios', 'JSDoc'],
     picture: './assets/img/SportSee.png',
     filters : ['Sass', 'Figma', 'React', 'Recharts', 'Axios', 'JSDoc']
+  },
+  {
+    id: 10,
+    name: 'Argent Bank',
+    type: 'OpenClassrooms',
+    languages: ['React', 'CSS'],
+    languagesIcons: ['fab fa-react','fab fa-css3-alt'],
+    repo: 'https://github.com/glg-dev/argent-bank',
+    description: `Créer une application web permettant de gérer les comptes bancaires d'un client. Implémenter un gestionnaire d'état, s'authentifier à une API, intéragir avec et la modéliser.`,
+    skills: ['React', 'Redux', 'TailwindCSS', 'API'],
+    picture: './assets/img/ArgentBank.png',
+    filters : ['React', 'Redux', 'TailwindCSS', 'API', 'MongoDB']
   }
 ];

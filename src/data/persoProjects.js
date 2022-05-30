@@ -37,5 +37,18 @@ export const persoProjects = [
     skills: ['setProperty', 'addEventListener'],
     picture: "./assets/img/CSSVariables.png",
     filters: ['JavaScript', 'GitHub Pages']
+  },
+  {
+    id: 4,
+    name: 'Netflix Clone',
+    type: 'Perso',
+    languages: ['React', 'Sass'],
+    languagesIcons: ['fab fa-react','fab fa-sass'],
+    source: "https://netflix-clone-glg.vercel.app/",
+    repo: "https://github.com/glg-dev/netflix-clone",
+    description: `Clone de la plateforme Netflix à l'aide de React et de l'API TMDB.`,
+    skills: ['React', 'API', 'Axios'],
+    picture: "./assets/img/NetflixClone.png",
+    filters: ['React', 'Sass', 'JavaScript', 'Axios', 'API']
   }
 ]
