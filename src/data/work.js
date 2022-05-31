@@ -10,6 +10,6 @@ export const work = [
     description: `Création d'un site web pour le cabinet de Floriane Girollet, Ostéopathe D.O. à Sallèles d'Aude. Le site est responsive et permet de consulter les informations de son cabinet ou de prendre rendez-vous.`,
     skills: ["React", "SwiperJS", "iframe"],
     picture: "./assets/img/CabinetSalleles.png",
-    filters: ["Sass", "JavaScript", "React", "SwiperJS", "iframe"]
+    filters: ["CSS/Sass", "React"]
   }
 ]

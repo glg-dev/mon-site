@@ -1,6 +1,9 @@
 .portfolio {
   position: relative;
   padding: 84px 42px 0 42px;
+  &__typedText {
+    height: 130px;
+  }
   h2 {
     margin-top: 4rem;
   }

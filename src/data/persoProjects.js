@@ -10,7 +10,7 @@ export const persoProjects = [
     description: `Horloge sur laquelle on peut cliquer pour qu'elle affiche l'heure au format numérique. Possibilité de changer le thème couleur de la page.`,
     skills: ['React', 'Redux'],
     picture: "./assets/img/ReactClocks.png",
-    filters: ['Sass', 'JavaScript', 'React', 'Redux']
+    filters: ['CSS/Sass', 'React']
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const persoProjects = [
     description: `Création d'un kit de batterie. Il suffit d'appuyer sur les touches correspondantes pour jouer le son voulu, ou de cliquer sur le son.`,
     skills: ['Audio', 'JavaScript'],
     picture: "./assets/img/DrumKit.png",
-    filters: ['JavaScript', 'GitHub Pages', 'MP3']
+    filters: ['JavaScript']
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const persoProjects = [
     description: `Possibilité de changer les règles CSS d'une image ( taille et couleur de la bordure, flou, rotation, taille) au clic, grâce à JavaScript.`,
     skills: ['setProperty', 'addEventListener'],
     picture: "./assets/img/CSSVariables.png",
-    filters: ['JavaScript', 'GitHub Pages']
+    filters: ['JavaScript']
   },
   {
     id: 4,
@@ -49,6 +49,6 @@ export const persoProjects = [
     description: `Clone de la plateforme Netflix à l'aide de React et de l'API TMDB.`,
     skills: ['React', 'API', 'Axios'],
     picture: "./assets/img/NetflixClone.png",
-    filters: ['React', 'Sass', 'JavaScript', 'Axios', 'API']
+    filters: ['React', 'CSS/Sass', 'API']
   }
 ]

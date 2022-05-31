@@ -43,7 +43,9 @@ const Portfolio = () => {
 
   return (
     <div className='portfolio'>
-      <TypedText string={[`Voici mon portfolio.<br />^1600 Vous retrouverez ici mes créations.`]} />
+      <div className='portfolio__typedText'>
+        <TypedText string={[`Voici mon portfolio.<br />^1600 Vous retrouverez ici mes créations.`]} />
+      </div>
 
       <h2>
         <Glitch text='Filtrer par item' />

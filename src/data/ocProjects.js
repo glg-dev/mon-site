@@ -10,7 +10,7 @@ export const ocprojects = [
     description: `Intéger une maquette pour la société Booki, permettant à l'utilisateur de trouver des hébergements et activités dans la ville de son choix, avec des filtres pour les hébergements. L'interface est responsive.`,
     skills: ['Flexbox', 'responsive', 'GitHub', 'GitHub Pages', 'FontAwesome'],
     picture: './assets/img/Booki.png',
-    filters : ['Figma', 'GitHub Pages']
+    filters : ['CSS/Sass']
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const ocprojects = [
     description: `Implémenter la version mobile d'un site de foodtech avec des animations CSS en assurant la cohérence graphique du site. Utilisation de Git pour le versioning.`,
     skills: ['Sass', 'Grid', 'loader', 'keyframes'],
     picture: './assets/img/OhMyFood.png',
-    filters : ['Sass', 'Figma', 'GitHub Pages']
+    filters : ['CSS/Sass']
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const ocprojects = [
     description: `Intégrer un formulaire fonctionnel et une fenêtre modale en JavaScript sur le site de GameOn, une entreprise de gaming`,
     skills: ['JavaScript', 'events', 'RegExp', 'form validation'],
     picture: './assets/img/GameOn.png',
-    filters : ['JavaScript', 'Figma', 'GitHub Pages']
+    filters : ['JavaScript']
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const ocprojects = [
     description: `Créer une plateforme destinée aux photographes freelance. Formulaire, carousel, fonctionnalités de tri, "likes", et accessibilité répondant aux recommandations WCAG, le tout maintenable.`,
     skills: ['Accessibilité', 'Tris d\'image', 'Factory Pattern', 'Fetch', 'npm'],
     picture: './assets/img/FishEye.png',
-    filters : ['JavaScript', 'Figma', 'GitHub Pages', 'WCAG', 'JSDoc']
+    filters : ['JavaScript', 'WCAG']
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ export const ocprojects = [
     description: `Créer des algorithmes de recherche de recettes de cuisine selon plusieurs paradigmes avec possibilité de trier selon différents critères, tests de performance de ces algorithmes, gestion de l'asynchrone.`,
     skills: ['Comparaison d\'algorithmes', 'ES6', 'NodeJS'],
     picture: './assets/img/LesPetitsPlats.png',
-    filters : ['JavaScript', 'Figma', 'GitHub Pages']
+    filters : ['JavaScript']
   },
   {
     id: 6,
@@ -74,7 +74,7 @@ export const ocprojects = [
     description: `Débugger l'application de gestion de note de frais Billed, et implémenter des tests unitaires et d'intégration.`,
     skills: ['Jest', 'Routing', 'Tests',],
     picture: './assets/img/Billed.png',
-    filters : ['JavaScript', 'Figma', 'Tests', 'Notion.so', 'API']
+    filters : ['JavaScript', 'API']
   },
   // {
   //   id: 7,
@@ -95,7 +95,7 @@ export const ocprojects = [
     description: `Implémenter le front-end de Kasa, une application de location de logements, avec React et React-Router.`,
     skills: ['React', 'React Router'],
     picture: './assets/img/Kasa.png',
-    filters : ['Sass', 'Figma', 'React']
+    filters : ['CSS/Sass', 'React']
   },
   {
     id: 9,
@@ -107,7 +107,7 @@ export const ocprojects = [
     description: `Développer un tableau de bord d'analytics avec graphiques et diagrammes à l'aide d'une librairie externe, pour une startup dédiée au coaching sportif, et générer la documentation technique de l'application.`,
     skills: ['Recharts', 'Axios', 'JSDoc'],
     picture: './assets/img/SportSee.png',
-    filters : ['Sass', 'Figma', 'React', 'Recharts', 'Axios', 'JSDoc']
+    filters : ['CSS/Sass', 'React']
   },
   {
     id: 10,
@@ -119,6 +119,6 @@ export const ocprojects = [
     description: `Créer une application web permettant de gérer les comptes bancaires d'un client. Implémenter un gestionnaire d'état, s'authentifier à une API, intéragir avec et la modéliser.`,
     skills: ['React', 'Redux', 'TailwindCSS', 'API'],
     picture: './assets/img/ArgentBank.png',
-    filters : ['React', 'Redux', 'TailwindCSS', 'API', 'MongoDB']
+    filters : ['React', 'TailwindCSS']
   }
 ];
