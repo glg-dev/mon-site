@@ -84,7 +84,7 @@ const Portfolio = () => {
       {/* <h1 className='glitch' data-glitch='Mes travaux'>Mes travaux</h1> */}
       <div className="projects">
         {
-          ocprojects
+          persoProjects
             .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
             .map((project, index) => (
               <PortfolioProject project={project} key={index} />
@@ -92,18 +92,18 @@ const Portfolio = () => {
         }
         {
           work
-            .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
-            .map((project, index) => (
-              <PortfolioProject project={project} key={index} />
+          .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
+          .map((project, index) => (
+            <PortfolioProject project={project} key={index} />
             ))
-        }
-        {
-          persoProjects
-            .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
-            .map((project, index) => (
-              <PortfolioProject project={project} key={index} />
-            ))
-        }
+          }
+          {
+            ocprojects
+              .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
+              .map((project, index) => (
+                <PortfolioProject project={project} key={index} />
+              ))
+          }
       </div>
       {/* <h1 className='glitch' data-glitch='Mes compétences'>Mes compétences</h1>
       <Skills /> */}

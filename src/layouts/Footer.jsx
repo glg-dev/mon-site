@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className="content">
-        GLG - 2022
+        <small>GLG - 2022</small>
       </div>
       <Cube />
     </div>
