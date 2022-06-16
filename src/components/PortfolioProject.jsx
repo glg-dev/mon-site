@@ -9,7 +9,7 @@ const PortfolioProject = ({project}) => {
     <div className='PortfolioProject'>
       <div className="thumbnail" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
         <img src={picture} alt={name} />
-        <div className="header">
+        <div className="project__header">
           <h2>{name}</h2>
           {languagesIcons && (
             <div className="icons">

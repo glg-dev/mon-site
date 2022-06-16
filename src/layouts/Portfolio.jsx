@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Glitch from '../components/Glitch';
 import PortfolioProject from '../components/PortfolioProject';
-import Skills from '../components/Skills';
-import TypedText from '../components/TypedText';
 import { ocprojects } from '../data/ocProjects';
 import { persoProjects } from '../data/persoProjects';
 import { work } from '../data/work';
@@ -42,11 +40,8 @@ const Portfolio = () => {
   
 
   return (
-    <div className='portfolio'>
-      <div className='portfolio__typedText'>
-        <TypedText string={[`Voici mon portfolio.<br />^1600 Vous retrouverez ici mes créations.`]} />
-      </div>
-
+    <div className='portfolio' id='portfolio'>
+      <h1>Portfolio</h1>
       <h2>
         <Glitch text='Filtrer par item' />
       </h2>
@@ -55,7 +50,7 @@ const Portfolio = () => {
           filtersArray.map((filter) => (
             <button
               key={filter} 
-              className={(filter === selectedFilter ? "checked" : undefined)}
+              className={(filter === selectedFilter ? "checked button" : "button")}
             >
               <input 
                 type="radio" 
@@ -68,7 +63,7 @@ const Portfolio = () => {
             </button>
           ))
         }
-        <button className={(selectedFilter === '' ? "checked" : "")}>
+        <button className={(selectedFilter === '' ? "checked button" : "button")}>
           <input 
             type="radio" 
             name="radio" 
@@ -84,19 +79,19 @@ const Portfolio = () => {
       {/* <h1 className='glitch' data-glitch='Mes travaux'>Mes travaux</h1> */}
       <div className="projects">
         {
-          persoProjects
-            .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
-            .map((project, index) => (
-              <PortfolioProject project={project} key={index} />
-            ))
-        }
-        {
           work
           .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
           .map((project, index) => (
             <PortfolioProject project={project} key={index} />
             ))
           }
+        {
+          persoProjects
+            .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')
+            .map((project, index) => (
+              <PortfolioProject project={project} key={index} />
+            ))
+        }
           {
             ocprojects
               .filter(project => project.filters.includes(selectedFilter) || selectedFilter === '')

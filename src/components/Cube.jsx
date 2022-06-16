@@ -1,9 +1,13 @@
 import React from 'react';
+import arrowUp from '../assets/arrow-up.svg';
+import arrowDown from '../assets/arrow-down.svg';
 
 const Cube = () => {
+
   return (
     <div>
       <div className="container">
+        <img className='arrow-up' src={arrowUp} onClick={() => window.scrollBy(0, -400)} />
         <div className="circle-container circle-1">
         </div>
         <div className="circle-container circle-2">
@@ -16,6 +20,7 @@ const Cube = () => {
           <div className="side" id="right"></div>
           <div className="side" id="back"></div>
         </div>
+        <img className='arrow-down' src={arrowDown} onClick={() => window.scrollBy(0, 400)} />
       </div>
     </div>
   );

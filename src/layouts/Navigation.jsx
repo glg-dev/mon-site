@@ -1,19 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
     <div className='navigation'>
       <div className="navbar">
-      <NavLink to='/' className={(nav) => (nav.isActive ? "navActive" : "")}>
-        Accueil
-      </NavLink>
-      <NavLink to='/portfolio' className={(nav) => (nav.isActive ? "navActive" : "")}>
-        Portfolio
-      </NavLink>
-      <NavLink to='/contact' className={(nav) => (nav.isActive ? "navActive" : "")}>
-        Contact
-      </NavLink>
+        <a href='#'>Home</a>
+        <a href='#portfolio'>Portfolio</a>
+        <a href='#contact'>Contact</a>
+        <div className="resume">
+          <a href="./assets/CV.pdf" target='_blank' rel='noopener noreferrer'>CV</a>
+        </div>
       </div>
     </div>
   );

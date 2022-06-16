@@ -1,0 +1,27 @@
+.network-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFF;
+  border: 1px solid $nav-blue;
+  color: $nav-blue;
+  // transition: all 0.3s ease-in-out;
+  &:hover {
+    background: $nav-blue;
+    color: #FFF;
+  }
+  .popup {
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+    padding: .2rem .5rem;
+    font-size: .7rem;
+    width: 150px;
+    // @include glass;
+  }
+  
+}

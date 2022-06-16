@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 
-const TypedText = ({ string }) => {
+const TypedText = ({ string, delayed }) => {
   const el = React.useRef(null);
   const typed = React.useRef(null);
 
@@ -9,12 +9,12 @@ const TypedText = ({ string }) => {
     const options = {
       strings: string,
       typeSpeed: 42,
-      startDelay: 2500,
+      startDelay: delayed ? 5500 : 2500,
       backSpeed: 60,
       backDelay: 1500,
       smartBackspace: true, // this is a default
       loop: false,
-      showCursos: false,
+      showCursor: false,
       cursorChar: ''
     }
 

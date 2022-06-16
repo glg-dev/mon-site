@@ -1,14 +1,10 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
-import { NavLink } from 'react-router-dom';
 import Button from './Button';
 import Glitch from './Glitch';
 
 const ContactForm = () => {
   const form = useRef();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
   const [success, setSuccess] = useState(false);
 
   const sendEmail = (e) => {
@@ -27,38 +23,43 @@ const ContactForm = () => {
 
   return (
     <div className='contact-form'>
-    {
-      !success ? (
-        <div>
-          <h1>
-            <Glitch text='Contactez-moi' />
-          </h1>
-          <form onSubmit={sendEmail} className='form' ref={form}>
-            <div className="name">
-              <label htmlFor="name">Votre nom : </label>
-              <input type="text" name="name" tabIndex='1' onChange={(e) => setName(e.target.value)} required />
-            </div>
-            {name.length < 1 && <span id='error-name' className='error-input'>Veuillez renseigner votre nom</span>}
-            <div className="email">
-              <label htmlFor="email">Votre email : </label>
-              <input type="email" name="email" placeholder='exemple@mail.fr' tabIndex='2' onChange={(e) => setEmail(e.target.value)} required />
-            </div>
-            {email.length < 1 && <span id='error-email' className='error-input'>Veuillez renseigner votre email</span>}
-            <div className="message">
-              <label htmlFor="message">Votre message : </label>
-              <textarea name="message" placeholder='Votre message ici' onChange={(e) => setMessage(e.target.value)} required></textarea>
-            </div>
-            {message.length < 1 && <span id='error-message' className='error-input'>Veuillez écrire un message</span>}
-            <Button props={success && 'success'} />
-          </form>
+      <h1>
+        <Glitch text='Talk to me :)' />
+      </h1>
+      <form onSubmit={sendEmail} className='form' ref={form}>
+        <div className="name">
+          <input 
+            type="text" 
+            name="name"
+            placeholder="Nom"
+            tabIndex='1' 
+            required 
+          />
         </div>
-      ) : (
-        <div>
-          <p className='success'>Votre message a bien été envoyé !</p>
-          <NavLink to='/' className='nav-link'>Retour à l'accueil</NavLink>
+
+        <div className="email">
+          <input 
+            type="email" 
+            name="email" 
+            placeholder='Email' 
+            tabIndex='2' 
+            required 
+          />
         </div>
-      )
-    }
+
+        <div className="message--submit">
+          <div className="message">
+            <textarea 
+              name="message" 
+              placeholder='Votre message ici' 
+              required
+            >
+            </textarea>
+          </div>
+          <Button props={success ? 'success' : 'send'}/>
+        </div>
+
+      </form>
     </div>
   );
 };

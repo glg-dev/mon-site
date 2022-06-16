@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
 
 
-$font-1 : 'Athiti', sans-serif;
+
+$font-1 : 'Glory', sans-serif;
 $font-2 : 'Marcellus', serif;
+$font-3 : 'Athiti', sans-serif;
 
 // Général
 body {
@@ -13,6 +16,7 @@ body {
 }
 
 a {
+  font-family: $font-1;
   text-decoration: none;
   color: inherit;
 }
@@ -24,25 +28,13 @@ a {
 
 .navigation {
   letter-spacing: .05em;
-  a {
-    text-align: center;
-    &:hover {
-      text-shadow: 12px 4px 5px rgba(255, 255, 255, 0.66);
-    }
+  font-size: 24px;
+  color: #000;
+  a:hover {
+    font-weight: bold;
   }
-  .navActive {
-    text-decoration: underline;
-    text-shadow: $text-shadow;
-    font-size: 1.1em;
-  }
-}
-
-.home {
-  // font-family: $font-1;
-  font-size: 20px;
-  letter-spacing: .1rem;
-  a {
-    font-family: $font-1;
+  .resume {
+    color: #FFF;
   }
 }
 
@@ -102,8 +94,5 @@ a {
 }
 
 .footer {
-  text-align: center;
-  .content {
-    text-shadow: $text-shadow;
-  }
+  color: #000;
 }

@@ -1,6 +1,6 @@
 .container {
   position: fixed;
-  bottom: 0;
+  bottom: 2.5rem;
   right: 0;
   display: flex;
   justify-content: center;
@@ -8,6 +8,16 @@
   width: 200px;
   height: 200px;
   animation: appear .9s forwards;
+  .arrow-up {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+  }
+  .arrow-down {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+  }
 }
 
 .circle-container {

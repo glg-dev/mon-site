@@ -5,15 +5,21 @@
 @import './base/typedText';
 @import './settings.scss';
 
+@import './components/about';
 @import './components/button';
+@import './components/contactForm';
 @import './components/cube';
 @import './components/glitch';
+@import './components/network';
+@import './components/networkLink';
 @import './components/portfolioproject';
-@import './components/skills';
 @import './components/stars';
+
+@import './layouts/contact';
 @import './layouts/footer';
+@import './layouts/header';
 @import './layouts/navigation';
-@import './pages/contact';
+@import './layouts/portfolio';
+
 @import './pages/error';
 @import './pages/home';
-@import './pages/portfolio'
