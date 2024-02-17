@@ -3,25 +3,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
+  inline-size: 3rem;
+  block-size: 3rem;
   border-radius: 50%;
-  background: #FFF;
-  border: 1px solid $nav-blue;
-  color: $nav-blue;
-  // transition: all 0.3s ease-in-out;
-  &:hover {
-    background: $nav-blue;
-    color: #FFF;
+  background: $air-force-blue;
+  border: 2px solid $air-force-blue;
+  color: $eerie-black;
+  box-shadow: none;
+  text-shadow: none;
+  transition: background .4s ease-in-out, border .4s, box-shadow .4s, transform .4s ease-in-out;
+
+  i {
+    transition: .5s ease-in-out;
   }
+
+  &:hover {
+    background: $eerie-black;
+    border-color: $honeydew;
+    box-shadow: 0 0 .75rem $honeydew;
+    text-shadow: 0 0 .75rem $honeydew;
+
+    i {
+      color: $honeydew;
+      transform: rotateY(360deg);
+    }
+  }
+
   .popup {
     position: absolute;
-    top: 3.5rem;
-    left: 1rem;
+    inset-block-start: 3.5rem;
+    inset-inline-start: 1rem;
     padding: .2rem .5rem;
     font-size: .7rem;
-    width: 150px;
+    inline-size: 150px;
+    text-align: center;
+    transform: translateX(-50%);
+    text-shadow: none;
+    color: $honeydew;
     // @include glass;
   }
-  
+
 }

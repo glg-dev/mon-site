@@ -1,0 +1,16 @@
+.title-component {
+  display: flex;
+
+  span {
+    display: block;
+    min-inline-size: .5rem;
+    color: inherit;
+    transition: .5s ease;
+
+    &:hover {
+      color: $mountbatten-pink;
+      animation: jump .3s both;
+      // transform: rotateY(180deg);
+    }
+  }
+}

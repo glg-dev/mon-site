@@ -1,25 +1,23 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
-}
 
-::-webkit-scrollbar {
-  width: 0;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #000;
-}
-::-webkit-scrollbar-thumb {
-  background-color: $nav-blue;
-  border-radius: 10px;
+  &::selection {
+    background-color: $honeydew;
+    color: $air-force-blue;
+  }
 }
 
 body {
-  background: $night-sky;
-  margin: 0 4%;
+  position: relative;
+  background: $eerie-black;
+  cursor: none;
+}
+
+a,
+label,
+input,
+textarea {
+  cursor: inherit;
 }
 
 #root {
@@ -28,10 +26,33 @@ body {
   align-items: center;
 }
 
-ul, li {
-  list-style: none;
+.about,
+.portfolio,
+.contact {
+  max-inline-size: $content-inline-size;
 }
 
-.navbar, .home, .portfolio, .contact {
-  max-width: $content-width;
+.page-wrapper {
+  block-size: 100vb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fa-react {
+  color: $react-color;
+}
+
+.fa-css3-alt {
+  color: $css-color;
+}
+
+.fa-sass {
+  color: $sass-color;
+}
+
+.fa-js {
+  color: $javascript-color;
 }

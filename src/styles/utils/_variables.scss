@@ -1,15 +1,25 @@
-$cube-size: 50px;
+// THEMES
+$eerie-black: #1C1C1D;
+$air-force-blue: #6494AA;
+$honeydew: #DDF8E8;
+$apricot: #FFCAB1;
+$mountbatten-pink: #946E83;
+$platinum: #F2F4F3;
 
-$purple: #6a21bd;
-$light-purple: #9453A1;
-$night-sky: #1a1a20;
-$light-blue: #2DE4FC;
-$nav-blue: #7F9BB9;
-$grey: rgba(255, 255, 255, 0.54);
+// ICON COLORS
+$javascript-color: #f7df1e;
+$react-color: #00d8ff;
+$css-color: #1572B6;
+$sass-color: #CC6699;
 
-$text-shadow: 2px 1px 4px $light-blue;
-$box-shadow: 0 0 4px 0 #FFF;
+// TYPOGRAPHY
+$text-shadow: 2px 1px 4px $honeydew;
+$box-shadow: 0 0 .25rem $honeydew;
+$glowing-shadow: 0 0 .75rem $air-force-blue;
 
-$nav-height: 84px;
-$content-width: 900px
-
+// SIZES
+$cursor-size: .5rem;
+$nav-size: 20vi;
+$card-img-block-size: 11rem;
+$content-inline-size: 1200px;
+$height: 1rem;

@@ -1,14 +1,14 @@
 import React from 'react';
-import Cube from '../components/Cube';
 
 const Footer = () => {
+  const date = new Date().getFullYear();
+  
   return (
     <div className='footer'>
       <div className="content">
-        <small>GLG - 2022</small>
-        <small>Design by Lisa Cailleaux</small>
+        <small>GLG - {date}</small>
+        <small>Logo by Lisa Cailleaux</small>
       </div>
-      <Cube />
     </div>
   );
 };

@@ -1,6 +1,25 @@
 .about {
-  margin-top: 126px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: $box-shadow;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+  }
 }

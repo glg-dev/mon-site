@@ -1,0 +1,23 @@
+.custom-cursor {
+  position: absolute;
+  block-size: $cursor-size;
+  inline-size: $cursor-size;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 2;
+  animation: animateCursor 4s infinite;
+  transition: inline-size .2s ease, block-size .2s ease, background .2s ease, border .2s ease;
+
+  &.on-nav {
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    box-shadow: 0 0 1rem $platinum;
+    border-radius: 50%;
+    transition-property: background, transform;
+    backdrop-filter: brightness(250%);
+    background-color: transparent;
+    animation: none;
+  }
+}
