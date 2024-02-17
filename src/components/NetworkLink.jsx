@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const NetworkLink = ({link}) => {
 
   const [popup, setPopup] = useState(false);
-  const {url, icon, popupText} = link;
+  const [isFr, setIsFr] = useState(true)
+  const {url, icon, popupTextFr, popupTextEn} = link;
+  const { i18n } = useTranslation()
+
+  useEffect(() => {
+    i18n.language === "fr" ? setIsFr(true) : setIsFr(false)
+  }, [i18n.language])
 
   return (
     <div 
@@ -17,7 +24,7 @@ const NetworkLink = ({link}) => {
       </a>
       {
         popup && (
-          <p className="popup">{popupText}</p>
+          <p className="popup">{isFr ? popupTextFr : popupTextEn}</p>
         )
       }
     </div>

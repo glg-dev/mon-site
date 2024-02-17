@@ -8,14 +8,15 @@ const TypedText = ({ string, delayed }) => {
   useEffect(() => {
     const options = {
       strings: string,
+      contentType: 'html',
       typeSpeed: 42,
       startDelay: delayed ? 5500 : 2500,
       backSpeed: 60,
-      backDelay: 1500,
+      backDelay: 400,
       smartBackspace: true, // this is a default
       loop: false,
       showCursor: false,
-      cursorChar: ''
+      cursorChar: '|'
     }
 
     typed.current = new Typed(el.current, options);

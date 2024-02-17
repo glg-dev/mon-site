@@ -1,51 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,400;0,700;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
-
-
-$font-1 : 'Glory', sans-serif;
-$font-2 : 'Marcellus', serif;
-$font-3 : 'Athiti', sans-serif;
+$font-1: 'Overpass', sans-serif;
+$font-2: 'Gruppo', cursive;
 
 // Général
 body {
   font-family: $font-1;
-  color: #FFF;
+  color: $platinum;
   text-align: justify;
 }
 
 a {
-  font-family: $font-1;
   text-decoration: none;
   color: inherit;
 }
 
-//Cube
-.container {
-  font-size: 12px;
+.hovered-infos a {
+  text-decoration: underline;
+
+  &:hover {
+    text-shadow: $text-shadow;
+  }
+}
+
+button {
+  color: $platinum;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+
+  &.glowing-button a {
+    font-family: $font-1;
+  }
+}
+
+.language-button,
+.contact button {
+  font-family: $font-2;
 }
 
 .navigation {
-  letter-spacing: .05em;
-  font-size: 24px;
-  color: #000;
-  a:hover {
-    font-weight: bold;
+  button {
+    font-family: $font-2;
   }
-  .resume {
+
+  a {
+    font-weight: 500;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+
+  .resume__container {
     color: #FFF;
+  }
+}
+
+.PortfolioProject {
+  font-family: $font-1;
+
+  h2 {
+    font-family: $font-2;
+  }
+
+  .skills-list {
+    font-weight: 100;
   }
 }
 
 .glitch {
   letter-spacing: .1rem;
-  text-shadow: 1px 1px 2px $light-blue;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-shadow: 1px 1px 2px $honeydew;
+
   &::after {
-    color: $purple;
+    color: $mountbatten-pink;
   }
+
   &::before {
-    color: $light-blue;
+    color: $honeydew;
   }
 }
 
@@ -54,35 +90,48 @@ a {
     text-align: center;
     font-size: 1.5em;
   }
+
   .form {
     span {
       font-size: .9em;
     }
-    .name, .email, .message {
+
+    .name,
+    .email,
+    .message {
       &:focus-within {
-        color: $light-blue;
+        color: $honeydew;
       }
     }
-    textarea, input {
+
+    textarea,
+    input {
       color: #FFF;
-      font-family: $font-1;
+      font-family: inherit;
+
       &::placeholder {
-        color: $grey;
-        font-family: $font-1;
+        color: $platinum;
+        font-family: inherit;
+        font-weight: 100;
+        font-size: .8rem;
       }
+
       &:focus {
-        color: $light-blue;
+        color: $honeydew;
       }
     }
+
     textarea {
       font-size: 1em;
     }
   }
+
   a:hover {
-    color: $light-blue;
+    color: $honeydew;
     text-decoration: underline;
   }
-  @media screen and (max-height: 720px) {
+
+  @media screen and (max-block-size: 720px) {
     font-size: 12px;
   }
 }

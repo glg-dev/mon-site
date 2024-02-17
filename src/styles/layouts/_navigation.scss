@@ -1,31 +1,35 @@
 .navigation {
   position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
   display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: $nav-height;
-  background: $nav-blue;
-  overflow-x: hidden;
-  z-index: 2;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  block-size: 100vb;
+  inline-size: $nav-size;
+  max-inline-size: 300px;
+  padding-block-start: 1rem;
+  padding-block-end: 4rem;
+  background: transparent;
+  cursor: none;
+  overflow: hidden;
+
+  img {
+    inline-size: 100px;
+    animation: grow-shadow 2s ease-in-out infinite;
+    transition: 1s;
+  }
+
   .navbar {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
     align-items: center;
-    width: $content-width;
-    a {
-      padding: 20px 0;
-      border: 1px solid transparent;
-      cursor: pointer;
-    }
-    .resume {
-      background: $light-purple;
-      padding: 6px 8px;
-      border-radius: 50%;
-      transform: scale(1);
-      transition: all .3s ease-in-out;
-      &:hover {
-        transform: scale(1.1);
-      }
+
+    button.button {
+      inline-size: 8.5rem;
     }
   }
 }

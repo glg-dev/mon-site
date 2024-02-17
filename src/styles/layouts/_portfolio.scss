@@ -1,27 +1,28 @@
 .portfolio {
   position: relative;
-  padding-top: 6rem;
+  padding-block-start: 6rem;
+
   .filters {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    margin-top: 1rem;
+    margin-block-start: 1rem;
   }
+
   input {
     display: none;
   }
-  label {
-    cursor: pointer;
-  }
+
   h1 {
-    margin-bottom: 2rem;
+    margin-block-end: 2rem;
   }
+
   .projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding: 4rem 0;
+    gap: 2rem;
+    padding-block: 2rem;
   }
 }
