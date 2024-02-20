@@ -28,10 +28,6 @@
         box-shadow: $box-shadow;
         outline: none;
       }
-
-      @media screen and (max-inline-size: 465px) {
-        inline-size: 240px;
-      }
     }
 
     input {

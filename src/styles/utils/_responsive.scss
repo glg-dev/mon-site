@@ -1,0 +1,31 @@
+.mobile-appear {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  .mobile-appear {
+    display: block;
+  }
+
+  .about {
+    box-shadow: none;
+  }
+
+  .contact-form form input {
+    inline-size: 200px;
+  }
+
+  .contact-form form .message--submit .send--button,
+  .network-link {
+    block-size: 2rem;
+    inline-size: 2rem;
+
+    img {
+      width: 1rem;
+    }
+  }
+}
