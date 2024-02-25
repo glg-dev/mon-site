@@ -11,12 +11,48 @@
     display: block;
   }
 
+  .home {
+    padding-inline: 0.5rem;
+  }
+
+  .navigation {
+    justify-content: space-between;
+
+    img {
+      inline-size: 60px;
+    }
+  }
+
+  .page-wrapper {
+    justify-content: flex-start;
+    padding-block: 2rem;
+    block-size: auto;
+  }
+
+  .about,
+  .portfolio,
+  .contact {
+    padding: 0;
+  }
+
   .about {
     box-shadow: none;
   }
 
-  .contact-form form input {
-    inline-size: 200px;
+  .wrap {
+    block-size: auto;
+  }
+
+  .contact-form form {
+
+    input,
+    textarea {
+      inline-size: 200px;
+    }
+
+    .message--submit {
+      flex-direction: column;
+    }
   }
 
   .contact-form form .message--submit .send--button,
@@ -27,5 +63,10 @@
     img {
       width: 1rem;
     }
+  }
+
+  .network-link .popup {
+    inset-block-start: 2rem;
+    inline-size: 75vi;
   }
 }
